@@ -9,5 +9,12 @@
 Console.WriteLine("Введите трехзначное число: ");
 string text = Console.ReadLine();
 int number = Convert.ToInt32(text);
-int twonumber = ((number%100)/10);
-Console.WriteLine("Вывод числа: " + twonumber);
+if (number < 100 && number >= 1000)
+{
+    Console.WriteLine("Введите трехзначное число");
+}
+else
+{
+    int twonumber = ((number%100)/10);
+    Console.WriteLine(("Второе число: ") + twonumber);
+}
