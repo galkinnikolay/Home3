@@ -10,11 +10,15 @@ Console.Write("Введите номер дня недели: ");
 string text = Console.ReadLine();
 int DayOfWeek = Convert.ToInt32(text);
 
-if (DayOfWeek <= 5)
+if (DayOfWeek <= 0 || DayOfWeek > 7)
 {
-Console.WriteLine("Нет");
+    Console.WriteLine("Введите от 1 до 7!");
+}
+else if (DayOfWeek <= 5 )
+{
+Console.WriteLine("Нет, рабочий день!");
 }
 else if (DayOfWeek <= 7)
 {
-Console.WriteLine("Да");
+Console.WriteLine("Да, выходной день!");
 }
