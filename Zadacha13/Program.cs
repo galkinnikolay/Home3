@@ -16,15 +16,15 @@ int number = Convert.ToInt32(text);
 
 if (number < 100)
 {
-     Console.WriteLine("Третьей цифры нету");
+Console.WriteLine("Третьей цифры нету");
 }
 else if (number < 999)
 {
-    int t = (number % 10);
-    Console.WriteLine("Вывод числа: " + t);
+int t = (number % 10);
+Console.WriteLine("Вывод числа: " + t);
 }
 else if (number > 1000)
 {
-    int t = ((number / 10)%10);
-    Console.WriteLine("Вывод числа: " + t);
+int t = ((number / 10)%10);
+Console.WriteLine("Вывод числа: " + t);
 }
