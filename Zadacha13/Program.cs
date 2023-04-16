@@ -25,6 +25,6 @@ Console.WriteLine("Вывод числа: " + t);
 }
 else if (number > 1000)
 {
-int t = ((number / 10)%10);
+int t = ((number / 100)%10);
 Console.WriteLine("Вывод числа: " + t);
 }
